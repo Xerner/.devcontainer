@@ -16,6 +16,8 @@ else
 fi
 find ~/.ssh -maxdepth 1 -type f -exec chmod 600 {} \;
 
+DOCKER_MOUNTS=$(mount | grep ^/dev/ | grep -v /etc | awk '{print $3}')
+
 WELCOME_INFO="
 ██     ██ ███████ ██       ██████  ██████  ███    ███ ███████
 ██     ██ ██      ██      ██      ██    ██ ████  ████ ██     
@@ -24,6 +26,10 @@ WELCOME_INFO="
  ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████
 
 Workspace Folder: ${WORKSPACE_FOLDER}
+
+Docker Mounts
+-------------------------------------------------
+${DOCKER_MOUNTS}
 ${COLOR_YELLOW}
 Git
 -------------------------------------------------
