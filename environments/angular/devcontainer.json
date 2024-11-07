@@ -23,6 +23,7 @@
         "esbenp.prettier-vscode",
         "PKief.material-icon-theme",
         "usernamehw.errorlens",
+        "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
         "cyrilletuzi.angular-schematics",
         "Angular.ng-template"
