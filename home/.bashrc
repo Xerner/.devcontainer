@@ -1,8 +1,7 @@
 source ~/bash/colors.sh
 source ~/bash/.bash_git
 source ~/bash/bash_prompt.sh
-source ~/bash/add-git-info-from-env.sh
-source ~/bash/git-set-submodule-settings.sh
+# source ~/bash/git-set-submodule-settings.sh
 
 git config --global --add safe.directory "*"
 git config --global core.editor "code --wait"
@@ -46,7 +45,3 @@ to see this info again, printf \"\$WELCOME_INFO\"
 "
 
 printf "$WELCOME_INFO"
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
